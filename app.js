@@ -2,6 +2,7 @@ const intro = document.getElementById('intro')
 const video =intro.querySelector('video')
 const text=intro.querySelector('h1')
 const anmoljenner =document.getElementById('anmoljenner')
+var scroller=document.getElementById("keepscrolling")
 let threethings=document.getElementById("threethings")
 let boxone=document.getElementById("one")
 let boxtwo=document.getElementById("two")
@@ -17,7 +18,7 @@ const end =section.querySelector('h1')
 const controller =new ScrollMagic.Controller();
 //scenes
 const scene = new ScrollMagic.Scene({
-    duration:55000,
+    duration:33000,
     triggerElement:intro,
     triggerHook:0
 })
@@ -37,6 +38,7 @@ setInterval(()=>{
     delay+=(scrollpos-delay)*accelamount
     video.currentTime=scrollpos
     console.log(scrollpos)
+    //manentia ai
     if (scrollpos>1 &&scrollpos<2 ) {
         anmoljenner.classList.add("hide");  
     };
@@ -46,7 +48,9 @@ setInterval(()=>{
     if (scrollpos<1) {
         anmoljenner.classList.remove("hide");  
     };
-    
+
+
+
     if (scrollpos>5 ) {
         boxone.classList.add("reveal")
     };
@@ -99,15 +103,28 @@ setInterval(()=>{
         boxsix.classList.remove("show")
     };
 
-    if (scrollpos> 50) {
+    if (scrollpos> 30) {
         boxfour.classList.remove("show")
     };
-    if (scrollpos>50 ) {
+    if (scrollpos>30 ) {
         boxfive.classList.remove("show")
     };
-    if (scrollpos>50) {
+    if (scrollpos>30) {
         boxsix.classList.remove("show")
     };
-})
+    //keep scrolling
+    
+//keepscrolling
+if (scrollpos>14) {
+    console.log("pochigya")
+    scroller.classList.add("aaja");  
+};
+if (scrollpos>15 ) {
+    scroller.classList.remove("aaja");  
+};
+if (scrollpos<14) {
+    scroller.classList.remove("aaja");  
+};
 
+})
 
