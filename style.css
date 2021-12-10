@@ -186,7 +186,202 @@ text-decoration: none;
 
 /* responsiveness */
 
-@media (max-width:412px) {
+@media (max-width:1025px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 100px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 150px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: 3%;
+            color: white;
+            display: flex;
+            font-size: 2.2rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -8.25vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -105px;
+        }
+        #six{
+            margin-left: -100px;
+        }
+        .parabreak{
+            display: block;
+        }
+}
+@media (max-width:768px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 100px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 100px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: 3%;
+            color: white;
+            display: flex;
+            font-size: 2rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -8.25vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -65px;
+        }
+        .parabreak{
+            display: block;
+        }
+}
+@media (max-width:540px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 60px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 80px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 30%;
+            left: 0%;
+            color: white;
+            display: flex;
+            font-size: 1.4rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -5vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -90px;
+        }
+        #six{
+            margin-left: -74px;
+           
+        }
+        .parabreak{
+            display: block;
+        }
+}
+@media (max-width:415px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 60px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: -2%;
+            color: white;
+            display: flex;
+            font-size: 0.95rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -10vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -65px;
+        }
+        .parabreak{
+            display: block;
+        }
+}
+@media (max-width:412px) and (min-width:376px){
     .intro video{
         height: 100%;
         width: 100%;
@@ -233,10 +428,56 @@ text-decoration: none;
             display: block;
         }
 }
+@media (max-width:376px)  and (min-width:361px){
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 50%;
+            left: -2%;
+            color: white;
+            display: flex;
+            font-size: 1rem;
+            transition: opacity 500ms;
+         
+        }
+        .bx-2{
+            margin: -13vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
 
-
-
-
+        }
+        #five{
+            margin-left: -78px;
+           
+        }
+        #six{
+            margin-left: -95px;
+           
+        }
+        .parabreak{
+            display: block;
+        }
+}
 
 @media (max-width:360px) {
     .intro video{
@@ -287,9 +528,11 @@ text-decoration: none;
 
         
 
+
+}
 @media (max-width:320px) {
     .intro video{
-        height: 100%;
+        height: 100%; 
         width: 100%;
         object-fit:contain;
         }
@@ -334,4 +577,6 @@ text-decoration: none;
             display: block;
         }
 }
-}
+
+
+
