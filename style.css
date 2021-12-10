@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.intro{
+    height: 100vh;
+  
+    background-color: black;
+}
+h1{
+    font-size: 5rem;
+}
+p{
+    font-size: 1.3rem; 
+}
+.intro video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+#anmoljenner{
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    transition: opacity 500ms;
+}
+.anmoljenner.hide{
+    opacity: 0;
+}
+.mainbox{
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    color: white;
+    display: flex;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    transition: opacity 500ms;
+}
+.mainbox.reveal{
+    opacity: 1;
+}
+.bx-1{
+margin: 10vw;
+text-align: center;
+}
+#one{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#one.reveal{
+opacity: 1;
+transition: opacity 500ms;
+}
+#two{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#two.reveal{
+opacity: 1;
+transition: opacity 500ms;
+}
+#three{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#three.reveal{
+opacity: 1;
+transition: opacity 500ms;
+}
+
+
+/* //buton */
+.playstorebutton {
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    color: white;
+    border: 2px solid white;
+  }
+  
+  .playstorebutton:hover {
+    color: #01c9cf;
+    cursor:pointer;
+    border: 2px solid #01c9cf;
+  }
+/* last text */
+.mainbox-2{
+    position: absolute;  
+    top: 20%;
+    left: 50%;
+    color: white;
+    display: flex;
+    transform: translate(-50%,-50%);
+    font-size: 2rem;
+    transition: opacity 500ms;
+    text-align: center;
+}
+.bx-2{
+    margin: 15vh;
+    text-align: center;
+    text-transform: capitalize;
+    min-width: 40vh;
+    background: linear-gradient(90deg, #000, #01c9cf, #000);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  animation: animate 10s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    25% {
+      background-position: 100%;
+      background-size: 100%;
+    }
+    50% {
+      background-position: 100%;
+      background-size: 100%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+#six{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#six.show{
+opacity: 1;
+transition: opacity 500ms;
+}
+#four{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#four.show{
+opacity: 1;
+transition: opacity 500ms;
+}
+.parabreak{
+    display: none;
+}
+#five{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+#five.show{
+opacity: 1;
+transition: opacity 500ms;
+}
+.blue{
+color: #01c9cf !important;
+}
+    /* last section  */
+    
+.greybox{
+    margin-top: -2px;
+    background-color: #222222;
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.greybox a{
+text-decoration: none;
+
+}
+
+
+
+
+/* responsiveness */
+
+@media (max-width:412px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: -2%;
+            color: white;
+            display: flex;
+            font-size: 0.95rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -10vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -65px;
+        }
+        .parabreak{
+            display: block;
+        }
+}
+
+
+
+
+
+@media (max-width:360px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 80px;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: -2%;
+            color: white;
+            display: flex;
+            font-size: 0.95rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -10vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -65px;
+        }
+        .parabreak{
+            display: block;
+        }
+
+        
+
+@media (max-width:320px) {
+    .intro video{
+        height: 100%;
+        width: 100%;
+        object-fit:contain;
+        }
+#anmoljenner{
+            position: absolute;  
+            top: 50%;
+            left: 50%;
+            color: white;
+            transform: translate(-50%,-50%);
+            font-size: 4rem;
+            text-align: center;
+            transition: opacity 500ms;
+        }
+        .mainbox{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
+            
+        }
+        .mainbox-2{
+            position: absolute;  
+            top: 40%;
+            left: -2%;
+            color: white;
+            display: flex;
+            font-size: 0.95rem;
+            transition: opacity 500ms;
+            max-width: 1vw;
+         
+        }
+        .bx-2{
+            margin: -10vh;
+            text-align: center;
+            text-transform: capitalize;
+            width: 20px;
+
+        }
+        #five{
+            margin-left: -65px;
+        }
+        .parabreak{
+            display: block;
+        }
+}
+}
